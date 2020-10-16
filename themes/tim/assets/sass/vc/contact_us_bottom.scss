@@ -1,0 +1,43 @@
+
+#contact_us_bottom{
+    .inner{
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 100px;
+
+        .left{
+            width:50%;
+            h3{
+                font-family: 'Seravek Medium Italic';
+                font-weight: 500;
+                font-size:32px;;
+                color:#0d395a;
+                margin-bottom: 17px;;
+            }
+            .content{
+                color:#454545;
+                margin-bottom: 30px;
+                font-size:16px;
+            }
+            .control{
+                display: flex;
+                font-size:16px;
+                justify-content: space-between;
+                max-width: 370px;
+
+                a{
+                    display: inline-flex;
+                    width:calc(50% - 10px);
+                }
+            }
+        }
+        .right{
+            width:50%;
+            img{
+                max-width: 600px;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}

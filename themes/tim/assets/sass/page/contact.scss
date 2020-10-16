@@ -1,0 +1,181 @@
+@import "../tpl/variance";
+
+
+/*    ========================================     #contact_us_map  ========================================   */
+#contact_location{    
+    position: relative;
+    margin-bottom: 100px;;
+    padding:0 15px;
+
+    .inner{
+        display: flex;
+        align-items: flex-end;
+
+        .left_img{
+            display: block;
+            max-width: 592px;
+            img{
+                width:100%;
+            }
+        }
+        .info_board{
+            height: 280px;
+            background: #00c1d5;
+            color: #fff;
+            display: inline-block;
+            max-width: 650px;           
+            padding: 52px 70px 30px;
+            box-sizing: border-box;
+            margin-left: -50px;
+            position: absolute;
+            right: 15px;
+
+            &:after{
+                content:'';
+                position: absolute;
+                background-image:url(../img/pic-contactsfi.svg);
+                height:140px;
+                width:140px;
+                bottom: -10px;
+                right: 0;
+            }
+
+            h3{
+                margin-top:0;
+                font-size:32px;
+                font-family: 'Seravek Italic';
+                font-weight: normal;
+                letter-spacing: 1.6px;
+            }
+            .contact_info{
+                color:#fff;
+                letter-spacing: 0.8px;;
+            }
+        }        
+    }
+}
+
+
+
+
+/*    ========================================     #contact_us_form   ========================================   */
+
+#contact_us_form{   
+    max-width: 830px;;
+    margin:auto auto 100px;;
+    padding:0 15px;
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 261px;
+        height: 423px;
+        background-image: url(../img/pic-contactus-2.svg);
+        background-size: cover;
+        right: -201px;
+        bottom: 100px;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 261px;
+        height: 323px;
+        background-image: url(../img/pic-contactus-1.svg);
+        background-size: cover;
+        left: -139px;
+        bottom: 100px;
+    }
+
+
+
+
+    .wpcf7-not-valid-tip {
+        color: #dc3232;
+        font-size: 1em;
+        font-weight: normal;
+        display: block;
+        background: #dc3232;
+        display: inline-block;
+        color: #fff;
+        padding: 2px 10px;
+    }
+
+    
+    h3{
+        text-align: center;
+        font-size:30px;
+        line-height: 40px;;
+        font-family: 'Seravek Medium Italic';
+        font-weight:normal;
+        letter-spacing: 1.6px;;
+        color:#0d395a;
+    }
+    p{
+        font-size:16px;
+        max-width: 500px;;
+        margin:auto auto 50px;;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #454545;        
+    }
+
+    .inner{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        ::placeholder {
+            color: #777777;
+            font-size: 1em;
+            letter-spacing: 0.5px;;
+            padding: 0 10px;
+          }
+
+        .w50{
+            width:calc(50% - 10px);
+            margin-bottom: 27px;;
+        }
+        .w100{
+            width:100%;
+            margin-bottom: 27px;;
+            text-align: center;
+        }
+
+        input[type="text"]{
+            border:0px;
+            height:46px;
+            background:#d8f3f7;
+            box-sizing: border-box;
+        }
+        input[type="email"]{
+            border:0px;
+            height:46px;
+            background:#d8f3f7;
+            box-sizing: border-box;
+        }
+        textarea{
+            width:100%;
+            border:0px;
+            height:211px;
+            background:#d8f3f7;
+            box-sizing: border-box;
+        }
+        input[type="submit"]{
+            background:#00c1d5;
+            color:#fff;
+            border:0px;
+            width:185px;
+            height:50px;
+            margin:auto;
+            outline:none;
+        }
+    }
+}

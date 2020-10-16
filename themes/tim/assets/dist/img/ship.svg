@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ship" width="176.27" height="46.867" viewBox="0 0 176.27 46.867">
+    <defs>
+        <style>
+            .cls-1{fill:#0d395a}.cls-2{fill:#277aa9}.cls-3{fill:#fff}.cls-4{fill:#e84040}.cls-5{fill:none;stroke-miterlimit:10;stroke:#fff}.cls-6{fill:#00c1d5}
+        </style>
+    </defs>
+    <path id="Path_631" d="M330.715 811.791h49.748l4.814 8.345h121.708l-2.955 8.664H339.447z" class="cls-1" transform="translate(-330.715 -791.335)"/>
+    <path id="Path_632" d="M349.112 829.772l4.406 9.4h148.253l3.253-9.4z" class="cls-1" transform="translate(-331.709 -792.306)"/>
+    <g id="Group_636" transform="translate(14.291)">
+        <path id="Rectangle_663" d="M0 0H21.504V10.591H0z" class="cls-2" transform="rotate(-180 10.752 10.267)"/>
+        <path id="Rectangle_664" d="M0 0H3.049V7.141H0z" class="cls-3" transform="rotate(-180 9.488 9.344)"/>
+        <path id="Rectangle_665" d="M0 0H3.049V7.141H0z" class="cls-3" transform="rotate(-180 6.058 9.344)"/>
+        <path id="Rectangle_666" d="M0 0H3.049V7.141H0z" class="cls-3" transform="rotate(-180 2.628 9.344)"/>
+        <circle id="Ellipse_85" cx="2.667" cy="2.667" r="2.667" class="cls-3" transform="translate(1.007 25.693)"/>
+        <circle id="Ellipse_86" cx="2.667" cy="2.667" r="2.667" class="cls-3" transform="translate(13.078 25.693)"/>
+        <circle id="Ellipse_87" cx="2.667" cy="2.667" r="2.667" class="cls-3" transform="translate(25.149 25.693)"/>
+        <g id="Group_629" transform="translate(101.374 14.773)">
+            <g id="Group_627" transform="translate(1.07 .08)">
+                <path id="Rectangle_667" d="M0 0H55.35V13.975H0z" class="cls-4"/>
+            </g>
+            <g id="Group_628" transform="translate(4.679)">
+                <path id="Line_760" d="M0 0L0 14.004" class="cls-5" transform="translate(48.125)"/>
+                <path id="Line_761" d="M0 0L0 14.004" class="cls-5" transform="translate(43.75)"/>
+                <path id="Line_762" d="M0 0L0 14.004" class="cls-5" transform="translate(39.375)"/>
+                <path id="Line_763" d="M0 0L0 14.004" class="cls-5" transform="translate(35)"/>
+                <path id="Line_764" d="M0 0L0 14.004" class="cls-5" transform="translate(30.625)"/>
+                <path id="Line_765" d="M0 0L0 14.004" class="cls-5" transform="translate(26.25)"/>
+                <path id="Line_766" d="M0 0L0 14.004" class="cls-5" transform="translate(21.875)"/>
+                <path id="Line_767" d="M0 0L0 14.004" class="cls-5" transform="translate(17.5)"/>
+                <path id="Line_768" d="M0 0L0 14.004" class="cls-5" transform="translate(13.125)"/>
+                <path id="Line_769" d="M0 0L0 14.004" class="cls-5" transform="translate(8.75)"/>
+                <path id="Line_770" d="M0 0L0 14.004" class="cls-5" transform="translate(4.375)"/>
+                <path id="Line_771" d="M0 0L0 14.004" class="cls-5"/>
+            </g>
+            <path id="Rectangle_668" d="M0 0H57.301V1.224H0z" class="cls-4" transform="rotate(-180 28.65 .658)"/>
+            <path id="Rectangle_669" d="M0 0H57.301V1.224H0z" class="cls-4" transform="rotate(-180 28.65 7.043)"/>
+        </g>
+        <g id="Group_632" transform="translate(41.124 14.773)">
+            <g id="Group_630" transform="translate(1.07 .08)">
+                <path id="Rectangle_670" d="M0 0H55.35V13.975H0z" class="cls-6"/>
+            </g>
+            <g id="Group_631" transform="translate(4.679)">
+                <path id="Line_772" d="M0 0L0 14.004" class="cls-5" transform="translate(48.125)"/>
+                <path id="Line_773" d="M0 0L0 14.004" class="cls-5" transform="translate(43.75)"/>
+                <path id="Line_774" d="M0 0L0 14.004" class="cls-5" transform="translate(39.375)"/>
+                <path id="Line_775" d="M0 0L0 14.004" class="cls-5" transform="translate(35)"/>
+                <path id="Line_776" d="M0 0L0 14.004" class="cls-5" transform="translate(30.625)"/>
+                <path id="Line_777" d="M0 0L0 14.004" class="cls-5" transform="translate(26.25)"/>
+                <path id="Line_778" d="M0 0L0 14.004" class="cls-5" transform="translate(21.875)"/>
+                <path id="Line_779" d="M0 0L0 14.004" class="cls-5" transform="translate(17.5)"/>
+                <path id="Line_780" d="M0 0L0 14.004" class="cls-5" transform="translate(13.125)"/>
+                <path id="Line_781" d="M0 0L0 14.004" class="cls-5" transform="translate(8.75)"/>
+                <path id="Line_782" d="M0 0L0 14.004" class="cls-5" transform="translate(4.375)"/>
+                <path id="Line_783" d="M0 0L0 14.004" class="cls-5"/>
+            </g>
+            <path id="Rectangle_671" d="M0 0H57.301V1.224H0z" class="cls-6" transform="rotate(-180 28.65 .658)"/>
+            <path id="Rectangle_672" d="M0 0H57.301V1.224H0z" class="cls-6" transform="rotate(-180 28.65 7.043)"/>
+        </g>
+        <g id="Group_635" transform="translate(71.917)">
+            <g id="Group_633" transform="translate(1.07 .08)">
+                <path id="Rectangle_673" d="M0 0H55.35V13.975H0z" class="cls-1"/>
+            </g>
+            <g id="Group_634" transform="translate(4.679)">
+                <path id="Line_784" d="M0 0L0 14.004" class="cls-5" transform="translate(48.125)"/>
+                <path id="Line_785" d="M0 0L0 14.004" class="cls-5" transform="translate(43.75)"/>
+                <path id="Line_786" d="M0 0L0 14.004" class="cls-5" transform="translate(39.375)"/>
+                <path id="Line_787" d="M0 0L0 14.004" class="cls-5" transform="translate(35)"/>
+                <path id="Line_788" d="M0 0L0 14.004" class="cls-5" transform="translate(30.625)"/>
+                <path id="Line_789" d="M0 0L0 14.004" class="cls-5" transform="translate(26.25)"/>
+                <path id="Line_790" d="M0 0L0 14.004" class="cls-5" transform="translate(21.875)"/>
+                <path id="Line_791" d="M0 0L0 14.004" class="cls-5" transform="translate(17.5)"/>
+                <path id="Line_792" d="M0 0L0 14.004" class="cls-5" transform="translate(13.125)"/>
+                <path id="Line_793" d="M0 0L0 14.004" class="cls-5" transform="translate(8.75)"/>
+                <path id="Line_794" d="M0 0L0 14.004" class="cls-5" transform="translate(4.375)"/>
+                <path id="Line_795" d="M0 0L0 14.004" class="cls-5"/>
+            </g>
+            <path id="Rectangle_674" d="M0 0H57.301V1.224H0z" class="cls-1" transform="rotate(-180 28.65 .658)"/>
+            <path id="Rectangle_675" d="M0 0H57.301V1.224H0z" class="cls-1" transform="rotate(-180 28.65 7.043)"/>
+        </g>
+        <path id="Rectangle_676" d="M0 0H7.705V5.038H0z" class="cls-2" transform="rotate(-180 7.171 5.104)"/>
+        <path id="Line_796" fill="none" stroke="#00bdd0" stroke-miterlimit="10" d="M95.576 0L0 0" transform="translate(64.132 33.028)"/>
+    </g>
+</svg>

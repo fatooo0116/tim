@@ -1,0 +1,102 @@
+#service_feature{
+    background-image: url(../img/bg-wave.svg);
+    background-size:auto 100%;
+    background-repeat: repeat-x;;
+    padding-bottom: 100px;
+    margin-bottom: 100px;;
+    >h3{
+        padding:20px;
+        text-align: center;
+        font-size:32px;
+        font-weight: 500;;
+        line-height: 40px;;
+        letter-spacing: 1.6px;;
+        font-family: 'Seravek Medium Italic';
+        color:#0d395a;
+    }
+    > .inner{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+       
+        .left{
+            width: calc(50% - 30px);
+            img{
+                width:100%;
+            }
+        }
+        .right{
+            width: calc(50% - 30px);            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            .sf_item2{
+                &.last-child{
+                    margin-bottom: 2em;;
+                }
+                margin-bottom: 2em;;
+                h3{
+                    width:100%;
+                    font-size: 32px;
+                    font-family: 'Seravek Medium Italic';
+                    display:block;
+                    font-weight: 500;
+                    color:#0d395a;
+                    margin:0 0 25px;
+                }
+                .content{
+                    color:#454545;
+                    max-width: 450px;;
+                    line-height: 1.4em;
+                    font-size:16px;
+                    letter-spacing: 0.8px;;
+                    margin-bottom: 30px;;
+                }
+                .button{
+                    background-color:#195d8f;
+                }
+            }
+
+
+
+            .sf_item1{
+                &.last-child{
+                    margin-bottom: 2em;;
+                }
+                margin-bottom: 2em;;
+                h3{
+                    width:100%;
+                    font-family: 'Seravek Medium';
+                    display:block;
+                    font-weight: 500;
+                    color:#195d8f;
+                    margin:0 0 10px;
+                }
+                .content{
+                    color:#454545;
+                    line-height: 1.3em;;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #service_feature{
+        .inner{
+            .left{
+                width:100%;
+                margin-bottom: 30px;;
+            }
+            .right{
+                width:100%;
+                .sf_item1,
+                .sf_item2{
+                    padding:0 15px;
+                }
+            }
+        }
+    }
+}

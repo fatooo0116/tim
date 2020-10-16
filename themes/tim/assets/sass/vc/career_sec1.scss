@@ -1,0 +1,82 @@
+#career_sec1_layer1{
+    margin-bottom: 150px;;
+   > .inner{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       &.text_center{
+           text-align: center;
+           .text{
+            max-width: none;
+            padding: 0 15px;
+           }
+       }
+
+       .pic{
+           padding-right: 50px;;
+           img{
+               width:312px;
+           }
+       }
+       .text{
+           max-width: 650px;;
+           h3{
+            font-size: 32px;
+            line-height: 40px;
+            font-family: 'Seravek Italic';
+            margin: 0 0 20px;
+            letter-spacing: 1.6px;
+            color:#0d395a;
+           }
+           .content{
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.8px;
+            color:#454545;
+            
+           }
+       }
+   }
+}
+
+
+#career_sec1_box3{
+    margin-bottom: 100px;;
+    .inner{
+        display: flex;
+        justify-content: space-between;;
+        align-items: center;
+        .infobox{
+            text-align: center;
+            width: calc(100% - 33px);
+            padding:0 20px;
+            .pic{
+               margin-bottom:30px;
+                img{
+                    max-width: 176px;
+                    width:100%;
+                    display:block;
+                    margin:auto;
+                }
+            }
+            .text{
+                h3{
+                    font-family: 'Seravek';
+                    font-size:20px;
+                    line-height: 20px;;
+                    letter-spacing: 1px;;
+                    color:#195d8f;
+                }
+                .content{
+                    max-width: 360px;
+                    margin: auto;
+                    font-size:16px;
+                    line-height: 20px;;
+                    letter-spacing: 1px;;
+                    color:#454545;
+                }
+            }
+        }
+    }
+}

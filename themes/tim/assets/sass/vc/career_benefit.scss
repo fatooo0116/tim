@@ -1,0 +1,86 @@
+#career_benefit{
+    background:#00c1d5;
+    margin-bottom: 100px;;
+    position: relative;
+    padding:50px 0px;
+
+    > .inner{
+        
+        &:before{
+            content:'';
+            position: absolute;
+            bottom: -124px;
+            width:400px;
+            height:317px;
+            left:0;
+            background-image:url(../img/pic-benfit.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        position: relative;
+        color:#fff;
+        display: flex;
+        max-width: 1230px;
+        margin:auto;
+        padding:0 15px;
+
+
+        .left{
+            h3{
+                font-size: 32px;
+                line-height: 40px;                
+                font-family: 'Seravek Italic';
+                margin: 0 0 20px;
+                letter-spacing: 0.8px;
+            }
+            .subtitle{
+                font-size: 16px;
+                line-height: 26px;   
+                letter-spacing: 0.8px;
+            }
+        }
+
+
+        #benefit_list{
+
+
+            .inner{
+                display: block;
+
+                .benefit_box{
+                    &:before{
+                        position:absolute;
+                        content:'';
+                        width:34px;
+                        height:34px;
+                        background-image:url(../img/check.png);
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        left:0;
+                    }
+                    position: relative;
+                    margin-bottom: 23px;
+                    padding: 0 0 0 50px;
+                    max-width: 740px;
+                    box-sizing: border-box;
+
+                    h4{
+                        font-size:20px;
+                        font-weight: 500;
+                        line-height: 24px;   
+                        letter-spacing: 1px;
+                        font-family: 'Seravek Medium';
+                        margin:0;
+                    }
+                    .my_benefit{
+                        font-size:16px;
+                        line-height: 24px;   
+                        letter-spacing: 0.8px;
+                    }
+                }
+            }
+        }
+    }
+}

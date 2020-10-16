@@ -1,0 +1,19 @@
+$desk_border_width:50px;
+$ipad_border_width:20px;
+$mobile_border_width:15px;
+
+
+/* menu */
+$desk_menu_pwidth:30px;
+$mobile_menu_pwidth:10px;
+
+
+/*  Footer Menu */
+$footer_menu_item_gap:60px;
+
+/*  color  */ 
+$turquoise-blue:#00c1d5;
+
+@media (max-width: 1024px) {
+    $desk_menu_pwidth:15px;
+}

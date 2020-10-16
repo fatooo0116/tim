@@ -1,0 +1,104 @@
+#leadership_bottom{
+    position: relative;
+    min-height: 630px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+
+    .bkimg{
+        position: absolute;;
+        width:100%;
+        height:100%;
+        background-size:1920px auto;;;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        z-index: -1;;
+    }
+
+    .inner{        
+        padding-bottom: 200px;;
+        padding: 0 15px;
+        box-sizing: border-box;
+        max-width: 1200px;
+    
+
+        .infobox{
+            width:50%;
+            min-height:332px;   
+            padding:50px;
+            box-sizing: border-box;         
+            color:#fff;
+            position: relative;
+            &.left{
+                float:left;
+                background:#00c1d5;                               
+            }
+            &.right{
+                margin-top:100px;
+                float:left;
+                background:#195d8f;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 176px;
+                    height: 46px;
+                    background-image: url(../img/ship.svg);
+                    background-size: cover;
+                    top: -46px;
+                    right: 10px;                
+                }
+            }
+
+            h3{
+                font-size:28px;
+                margin:0 0 14px;;
+            }
+            .content{
+                font-size:16px;
+                line-height: 1.8em;
+                max-width: 474px;;
+            }
+            a.more{
+                background: #fff;
+                color: #195d8f;
+                max-width: 150px;
+                box-sizing: border-box;
+                bottom: 50px;
+                position: absolute;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+    #leadership_bottom .bkimg{
+        background-size: 100% auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #leadership_bottom{
+        padding-bottom:200px;
+    }
+	#leadership_bottom .inner .infobox{
+        width:100%;
+        float: none;;
+        padding: 30px;
+    }
+    #leadership_bottom .bkimg{    
+        background-size: 100% auto;   
+        background-position: left bottom;
+    }
+}
+
+@media (max-width: 450px) {
+    #leadership_bottom .bkimg{
+        background-size: 700px auto;
+        background-position: left bottom;
+    }
+}

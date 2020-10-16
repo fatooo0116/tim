@@ -1,0 +1,26 @@
+#tpl_404{
+    padding:50px 15px 20px;;
+    text-align: center;
+    max-width: 650px;;
+    margin:auto auto 80px;
+    img{
+        display: block;       
+        margin:auto auto 20px;
+        width: 100%;
+    }
+    h3{
+        font-family: 'Seravek Italic';
+        font-size:32px;
+        color:#0d395a;
+        line-height:40px;
+        text-align:center;
+        margin: 20px 0;
+    }
+    p{
+        font-family: 'Seravek Light';
+        text-align:center;
+        font-size:18px;
+        line-height:22px;
+        color:#195d8f;
+    }
+}

@@ -1,0 +1,39 @@
+#book_system{
+    padding:0px 0;
+    .inner{
+        margin:auto;
+        max-width: 910px;;
+        padding:0 15px;
+        box-sizing: border-box;
+    }
+    .top{
+        text-align: center;
+        h3{
+            color:#0d395a;
+            font-family: 'Seravek Medium Italic';
+            font-size:40px;
+            font-weight: normal;
+            margin:0 0 22px;
+        }
+        h4{
+            color:#195d8f;
+            font-size:20px;
+            margin:0 0 27px;
+            font-weight: normal;
+            font-family: 'Seravek Medium';
+        }
+        .content{
+            color:#454545;
+            font-size:16px;
+            margin:0 0 50px;
+            line-height: 1.75em;
+            text-align: center;;
+        }
+    }
+    .bottom{
+        text-align: center;
+        img{
+            width:100%;
+        }
+    }
+}

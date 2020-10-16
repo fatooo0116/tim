@@ -1,0 +1,44 @@
+.button{
+    background-color:#00c1d5;
+    min-width: 178px;
+    height: 50px;
+    font-size:18px;
+    position: relative;
+    color:#fff;
+    display: inline-flex;;
+    justify-content: center;;
+    align-items: center;
+    letter-spacing: 0.9px;
+    border:0px;
+    &:after{
+        height:5px;
+        position: absolute;
+        bottom:0;
+        content:'';
+        left:0;
+        background-color:#d8f3f7;
+        width:0px;
+        transition:0.1s;
+    }
+    &:hover{
+        color:#fff;
+    }
+    &:active:after{
+        color:#fff;
+        width:100%;
+    }
+}
+
+.button.hwt{
+    background-color:#fff;
+    color:#195d8f;
+    outline:none ! important;
+    transition: 0.3s;;
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.98);
+    }
+}
