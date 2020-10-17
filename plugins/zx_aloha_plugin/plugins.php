@@ -57,3 +57,5 @@ include 'vc/leader_bottom.php';
   include 'vc/home_line.php';
   include 'vc/home_project.php';
   include 'vc/home_testi.php';
+
+  include 'post_type/project.php';
