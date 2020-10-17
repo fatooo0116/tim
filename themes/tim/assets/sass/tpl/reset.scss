@@ -1,83 +1,4 @@
-@font-face {
-    font-family: 'Seravek Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Medium'), url('../font/seravek/Seravek-Medium.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Medium Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Medium Italic'), url('../font/seravek/Seravek-MediumItalic.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek'), url('../font/seravek/Seravek.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Italic'), url('../font/seravek/Seravek-Italic.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek ExtraLight';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek ExtraLight'), url('../font/seravek/Seravek-ExtraLight.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek ExtraLight Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek ExtraLight Italic'), url('../font/seravek/Seravek-ExtraLightItalic.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Light'), url('../font/seravek/Seravek-Light.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Light Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Light Italic'), url('../font/seravek/Seravek-LightItalic.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Bold'), url('../font/seravek/Seravek-Bold.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Seravek Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Seravek Bold Italic'), url('../font/seravek/Seravek-BoldItalic.woff') format('woff');
-    }
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
 
 .box_width{
     max-width:1230px;
@@ -106,7 +27,7 @@ html {
 body {	
 	margin: 0;
     font-size:16px;	
-    font-family: 'Seravek Light';
+    font-family: 'Noto Sans TC', sans-serif;
 
 	// font-family: 'Roboto', Helvetica, sans-serif;
 	// -webkit-font-smoothing: antialiased;
@@ -650,6 +571,22 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
 
 
   .clearfix:after {  visibility:hidden;  display:block;  font-size:0;  content:" ";  clear:both;  height:0; } .clearfix {  zoom:1; }
+
+
+  a.btn{
+      font-size:16px;
+      color:#fff;
+      border-radius: 8px;;
+      background:#274678;
+      padding:10px 20px;
+      display: inline-block;
+      transition: 0.3s;
+      letter-spacing: 1px;;
+      &:hover{
+          background:rgba(39,70,120,0.78);
+      }
+  }
+
 
 
 

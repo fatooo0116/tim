@@ -112,28 +112,23 @@ function home_consult_fun( $atts, $content = null ) {
 
     ob_start();
     ?>
-        <section  id="home_consult" class="contact_section  ">            
-            <div class="inner  box_width">
-                <div class="left">
-                    <h3><?php  echo $title; ?></h3>
-                    <div class="ibox">
-                        <?php 
-                            echo $content1;
-                        ?>
-                    </div>
+
+
+        <section  id="home_consult" class="">            
+            <div class="inner  ">
+                <div class="left"  style="background-image:url(<?php echo $rimg[0]; ?>)">                                        
+                        <?php  if($rimg[0]){ ?>
+                            <img src="<?php  echo $rimg[0]; ?>" />
+                        <?php } ?>                
                 </div>
-                <div class="right">
-                    <?php if($rimg[0]){ ?>
-                        <img src="<?php echo $rimg[0]; ?>" />
-                    <?php } ?>   
-                    <div class="content2">
-                        <?php echo $content2; ?>
-                    </div>
-                    <a href="<?php echo $$btn_link; ?>"  class="<?php echo $btn_class; ?>">立即預約諮詢</a>
+                <div class="right">              
+                    <div class="my_form">
+                       Form
+                    </div>                    
                 </div>
             </div>
            
-        </section>
+        </section>        
     <?php
     $output = ob_get_contents();
     ob_end_clean();

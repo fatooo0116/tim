@@ -1,53 +1,4 @@
-@font-face {
-  font-family: 'Seravek Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Medium"), url("../font/seravek/Seravek-Medium.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Medium Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Medium Italic"), url("../font/seravek/Seravek-MediumItalic.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek"), url("../font/seravek/Seravek.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Italic"), url("../font/seravek/Seravek-Italic.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek ExtraLight';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek ExtraLight"), url("../font/seravek/Seravek-ExtraLight.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek ExtraLight Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek ExtraLight Italic"), url("../font/seravek/Seravek-ExtraLightItalic.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Light"), url("../font/seravek/Seravek-Light.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Light Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Light Italic"), url("../font/seravek/Seravek-LightItalic.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Bold"), url("../font/seravek/Seravek-Bold.woff") format("woff"); }
-@font-face {
-  font-family: 'Seravek Bold Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Seravek Bold Italic"), url("../font/seravek/Seravek-BoldItalic.woff") format("woff"); }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap");
 .box_width {
   max-width: 1230px;
   padding-left: 15px;
@@ -73,7 +24,7 @@ html {
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Seravek Light'; }
+  font-family: 'Noto Sans TC', sans-serif; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -561,6 +512,18 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
 
 .clearfix {
   zoom: 1; }
+
+a.btn {
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  background: #274678;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.3s;
+  letter-spacing: 1px; }
+  a.btn:hover {
+    background: rgba(39, 70, 120, 0.78); }
 
 @media (min-width: 1024px) {
   .pum-container.pum-responsive.pum-responsive-tiny {
@@ -1256,508 +1219,91 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
         font-size: 16px;
         line-height: 24px; }
 
-#tpl_404 {
-  padding: 50px 15px 20px;
-  text-align: center;
-  max-width: 650px;
-  margin: auto auto 80px; }
-  #tpl_404 img {
-    display: block;
-    margin: auto auto 20px;
-    width: 100%; }
-  #tpl_404 h3 {
-    font-family: 'Seravek Italic';
-    font-size: 32px;
-    color: #0d395a;
-    line-height: 40px;
-    text-align: center;
-    margin: 20px 0; }
-  #tpl_404 p {
-    font-family: 'Seravek Light';
-    text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-    color: #195d8f; }
+/*
+@import "page/404";
+@import "page/blog";
+@import "page/contact";
+@import "page/page";
+@import "page/archive";
+*/
+#home_cal {
+  background: #274678;
+  color: #fff; }
+  #home_cal .inner {
+    height: 506px;
+    display: flex; }
+    #home_cal .inner .left {
+      width: 50%;
+      background-size: cover;
+      background-position: center; }
+    #home_cal .inner .right {
+      width: 50%;
+      padding: 20px 20px 20px 50px; }
+      #home_cal .inner .right .my_form {
+        max-width: 500px; }
 
-.breadcrumb {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1220px;
-  margin: auto auto;
-  color: #bfbfbf; }
-
-#single_blog {
-  display: flex;
-  max-width: 1250px;
-  padding: 0 15px;
-  margin: auto auto 100px;
-  justify-content: space-between; }
-  #single_blog .left {
-    max-width: 816px;
-    padding-bottom: 50px; }
-    #single_blog .left h1 {
-      font-family: 'Seravek Italic';
-      color: #0d395a;
-      font-size: 32px;
-      letter-spacing: 1.6px;
-      line-height: 40px; }
-    #single_blog .left .entry-meta {
-      margin-bottom: 40px; }
-      #single_blog .left .entry-meta > .posted-on {
-        color: #bfbfbf; }
-        #single_blog .left .entry-meta > .posted-on > span {
-          color: #454545; }
-      #single_blog .left .entry-meta a {
-        color: #00c1d5; }
-    #single_blog .left .entry-content {
-      color: #454545; }
-    #single_blog .left img {
-      max-width: 100%;
-      height: auto; }
-    #single_blog .left figure {
-      margin: 20px 0; }
-    #single_blog .left .navigation.post-navigation,
-    #single_blog .left .nav-links {
-      display: none; }
-  #single_blog .right {
-    max-width: 363px;
-    color: #454545;
-    padding-left: 15px;
-    box-sizing: border-box;
-    border-left: 1px solid #f5f5f5; }
-    #single_blog .right h3 {
-      margin: 35px 0 20px;
-      font-size: 20px;
-      font-family: 'Seravek Medium';
-      font-weight: normal;
-      color: #195d8f; }
-    #single_blog .right ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none; }
-      #single_blog .right ul li {
-        list-style-type: none;
-        margin-bottom: 10px; }
-        #single_blog .right ul li .relative_post {
-          list-style-type: none;
-          background: rgba(216, 243, 247, 0.25);
-          display: block;
-          padding: 10px 20px; }
-          #single_blog .right ul li .relative_post .meta {
-            font-size: 14px;
-            line-height: 17px;
-            color: #454545;
-            font-weight: 500;
-            margin-bottom: 3px; }
-          #single_blog .right ul li .relative_post h4 {
-            margin: 0;
-            font-weight: 600;
-            color: #454545;
-            font-size: 16px;
-            letter-spacing: 0.7px;
-            line-height: 24px; }
-    #single_blog .right .search-form {
-      position: relative; }
-      #single_blog .right .search-form label .screen-reader-text {
-        display: none; }
-      #single_blog .right .search-form input[type="submit"] {
-        position: absolute;
-        right: 10px; }
-    #single_blog .right .widget {
-      padding: 10px 0; }
-      #single_blog .right .widget h2 {
-        margin: 5px 0; }
-      #single_blog .right .widget ul {
-        margin: 5px 0; }
-
-/* menu */
-/*  Footer Menu */
-/*  color  */
-/*    ========================================     #contact_us_map  ========================================   */
-#contact_location {
-  position: relative;
-  margin-bottom: 100px;
-  padding: 0 15px; }
-  #contact_location .inner {
-    display: flex;
-    align-items: flex-end; }
-    #contact_location .inner .left_img {
-      display: block;
-      max-width: 592px; }
-      #contact_location .inner .left_img img {
-        width: 100%; }
-    #contact_location .inner .info_board {
-      height: 280px;
-      background: #00c1d5;
-      color: #fff;
-      display: inline-block;
-      max-width: 650px;
-      padding: 52px 70px 30px;
-      box-sizing: border-box;
-      margin-left: -50px;
-      position: absolute;
-      right: 15px; }
-      #contact_location .inner .info_board:after {
-        content: '';
-        position: absolute;
-        background-image: url(../img/pic-contactsfi.svg);
-        height: 140px;
-        width: 140px;
-        bottom: -10px;
-        right: 0; }
-      #contact_location .inner .info_board h3 {
-        margin-top: 0;
-        font-size: 32px;
-        font-family: 'Seravek Italic';
-        font-weight: normal;
-        letter-spacing: 1.6px; }
-      #contact_location .inner .info_board .contact_info {
-        color: #fff;
-        letter-spacing: 0.8px; }
-
-/*    ========================================     #contact_us_form   ========================================   */
-#contact_us_form {
-  max-width: 830px;
-  margin: auto auto 100px;
-  padding: 0 15px;
-  position: relative; }
-  #contact_us_form:after {
-    content: '';
-    position: absolute;
-    width: 261px;
-    height: 423px;
-    background-image: url(../img/pic-contactus-2.svg);
-    background-size: cover;
-    right: -201px;
-    bottom: 100px; }
-  #contact_us_form:before {
-    content: '';
-    position: absolute;
-    width: 261px;
-    height: 323px;
-    background-image: url(../img/pic-contactus-1.svg);
-    background-size: cover;
-    left: -139px;
-    bottom: 100px; }
-  #contact_us_form .wpcf7-not-valid-tip {
-    color: #dc3232;
-    font-size: 1em;
-    font-weight: normal;
-    display: block;
-    background: #dc3232;
-    display: inline-block;
-    color: #fff;
-    padding: 2px 10px; }
-  #contact_us_form h3 {
-    text-align: center;
-    font-size: 30px;
-    line-height: 40px;
-    font-family: 'Seravek Medium Italic';
-    font-weight: normal;
-    letter-spacing: 1.6px;
-    color: #0d395a; }
-  #contact_us_form p {
-    font-size: 16px;
-    max-width: 500px;
-    margin: auto auto 50px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: 0.8px;
-    text-align: center;
-    color: #454545; }
-  #contact_us_form .inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    #contact_us_form .inner ::placeholder {
-      color: #777777;
-      font-size: 1em;
-      letter-spacing: 0.5px;
-      padding: 0 10px; }
-    #contact_us_form .inner .w50 {
-      width: calc(50% - 10px);
-      margin-bottom: 27px; }
-    #contact_us_form .inner .w100 {
-      width: 100%;
-      margin-bottom: 27px;
-      text-align: center; }
-    #contact_us_form .inner input[type="text"] {
-      border: 0px;
-      height: 46px;
-      background: #d8f3f7;
-      box-sizing: border-box; }
-    #contact_us_form .inner input[type="email"] {
-      border: 0px;
-      height: 46px;
-      background: #d8f3f7;
-      box-sizing: border-box; }
-    #contact_us_form .inner textarea {
-      width: 100%;
-      border: 0px;
-      height: 211px;
-      background: #d8f3f7;
-      box-sizing: border-box; }
-    #contact_us_form .inner input[type="submit"] {
-      background: #00c1d5;
-      color: #fff;
-      border: 0px;
-      width: 185px;
-      height: 50px;
-      margin: auto;
-      outline: none; }
-
-#page_top .bkimg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden; }
-  #page_top .bkimg:after {
-    content: '';
-    position: absolute;
-    width: 130%;
-    height: 0;
-    padding-bottom: 500px;
-    bottom: -200px;
-    transform: rotate(-10deg);
-    z-index: 1;
-    background: #fff; }
-#page_top .inner {
-  display: flex;
-  justify-content: space-between;
-  min-height: 700px;
-  max-width: 1400px; }
-  #page_top .inner .left {
-    padding-top: 130px; }
-    #page_top .inner .left h3 {
-      font-size: 56px;
-      line-height: 69px;
-      color: #195d8f;
-      font-family: 'Seravek Medium Italic';
-      font-weight: normal;
-      margin: 0 0 26px; }
-    #page_top .inner .left .content {
-      font-size: 18px;
-      line-height: 22px;
-      letter-spacing: 1.35px;
-      color: #195d8f;
-      font-family: 'Seravek Light';
-      max-width: 700px; }
-  #page_top .inner .right {
-    padding-top: 100px; }
-    #page_top .inner .right img {
-      width: 100%; }
-  #page_top .inner .left {
-    width: calc(80% - 20px);
-    z-index: 5; }
-  #page_top .inner .right {
-    top: 100px;
-    width: 50%;
-    right: 0;
-    z-index: 5; }
-    #page_top .inner .right img {
-      width: 100%; }
-
-#archive_page {
-  padding-top: 50px; }
-  #archive_page header.page-header {
-    margin: auto auto 37px;
-    max-width: 1230px;
-    padding: 0 15px; }
-    #archive_page header.page-header h1 {
-      display: none; }
-    #archive_page header.page-header h2 {
-      font-size: 32px;
-      line-height: 40px;
-      color: #0d395a;
-      margin: 0 0 10px;
-      letter-spacing: 1.6px;
-      font-family: 'Seravek Medium Italic';
-      font-weight: normal; }
-    #archive_page header.page-header p {
-      margin: 0;
-      padding-bottom: 1.7em;
-      font-size: 18px;
-      line-height: 22px;
-      color: #195d8f;
-      border-bottom: 1px solid #dbdbdb; }
-  #archive_page #hot_news {
-    margin: auto auto 102px;
+#home_bottom {
+  padding: 70px 0; }
+  #home_bottom .inner {
     max-width: 1230px;
     padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative; }
-    #archive_page #hot_news:before {
-      content: '';
-      position: absolute;
-      height: 212px;
-      width: 70px;
-      background-image: url("../img/pic-news-1.svg");
-      left: -25px;
-      bottom: -50px; }
-    #archive_page #hot_news:after {
-      content: '';
-      position: absolute;
-      height: 202px;
-      width: 107px;
-      background-image: url("../img/pic-news-2.svg");
-      right: -25px;
-      bottom: -75px; }
-    #archive_page #hot_news > h3 {
-      width: 100%;
-      font-size: 32px;
-      line-height: 40px;
-      font-family: 'Seravek Medium Italic';
-      font-weight: normal;
-      margin: 0 0 15px;
-      color: #0d395a; }
-    #archive_page #hot_news .news_item {
-      width: 33.33%;
-      box-sizing: border-box;
-      color: #fff; }
-      #archive_page #hot_news .news_item.pic1 {
-        background: #195d8f; }
-      #archive_page #hot_news .news_item.pic2 {
-        background: #00c1d5; }
-      #archive_page #hot_news .news_item.pic3 {
-        background: #e84040; }
-      #archive_page #hot_news .news_item .header {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-        padding: 23px 39px 23px;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
-        #archive_page #hot_news .news_item .header .date {
-          font-family: 'Seravek Light'; }
-        #archive_page #hot_news .news_item .header .cat {
-          font-family: 'Seravek'; }
-          #archive_page #hot_news .news_item .header .cat a {
-            color: #fff;
-            margin-left: 10px; }
-      #archive_page #hot_news .news_item .main {
-        padding: 70px 39px 39px;
-        font-family: 'Seravek'; }
-        #archive_page #hot_news .news_item .main h3 {
-          font-family: 'Seravek Italic';
-          margin: 0 0 10px;
-          font-weight: 500;
-          font-size: 24px;
-          letter-spacing: 1.2px; }
-          #archive_page #hot_news .news_item .main h3 a {
-            color: #fff; }
-        #archive_page #hot_news .news_item .main p {
-          font-size: 16px;
-          letter-spacing: 0.8px; }
-
-#post_cat {
-  background: #00c1d5;
-  height: 73px;
-  width: 100%;
-  margin-bottom: 57px; }
-
-#main_list .inner {
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: auto; }
-  #main_list .inner a {
-    font-size: 20px;
-    padding: 0 20px;
-    display: inline-flex;
-    height: 73px;
-    color: #fff;
-    align-items: center;
-    justify-content: center; }
-    #main_list .inner a.active {
-      background: rgba(25, 93, 143, 0.21); }
-    #main_list .inner a:hover {
-      background: rgba(25, 93, 143, 0.21); }
-#main_list .list {
-  margin: auto auto;
-  max-width: 1230px;
-  padding: 0 15px; }
-  #main_list .list .list_news {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid rgba(112, 112, 112, 0.12);
-    padding-top: 20px;
-    padding-bottom: 15px; }
-    #main_list .list .list_news .cats {
-      font-family: 'Seravek';
-      line-height: 26px;
-      font-size: 16px;
-      color: #00c1d5;
-      margin-bottom: 8px; }
-      #main_list .list .list_news .cats a {
-        margin-right: 10px;
-        color: #00c1d5; }
-    #main_list .list .list_news .date {
-      width: 130px;
-      line-height: 26px;
-      font-family: 'Seravek';
-      color: #777;
-      letter-spacing: 0.8px; }
-    #main_list .list .list_news .main_news {
-      width: calc(100% - 130px); }
-      #main_list .list .list_news .main_news h3 {
-        color: #195d8f;
-        font-family: 'Seravek Medium';
-        font-weight: 500;
-        margin-top: 0;
-        font-size: 20px;
-        line-height: 20px;
-        letter-spacing: 1px;
-        margin-bottom: 10px; }
-        #main_list .list .list_news .main_news h3 a:hover {
-          color: #0d395a; }
-      #main_list .list .list_news .main_news p {
-        margin: 10px 0;
-        font-size: 16px;
-        line-height: 20px;
-        color: #454545; }
-
-.custom-pagination {
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px; }
-
-.custom-pagination a.page-numbers {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #00c1d5;
-  color: #00c1d5;
-  transition: 0.3s;
-  margin: 0 5px; }
-
-.custom-pagination a.page-numbers:hover {
-  border: 1px solid #00c1d5;
-  color: #00c1d5; }
-
-.custom-pagination > span {
-  width: 32px;
-  height: 32px;
-  margin: 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #00c1d5;
-  background: #00c1d5;
-  color: #fff; }
+    margin: auto;
+    display: flex; }
+    #home_bottom .inner .left {
+      width: 50%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center; }
+      #home_bottom .inner .left .ibox {
+        display: block; }
+        #home_bottom .inner .left .ibox h3 {
+          width: 100%;
+          font-size: 32px;
+          color: #274678;
+          margin: 0 0 36px 0; }
+        #home_bottom .inner .left .ibox ul {
+          margin: 0;
+          padding: 0 0 0 0px; }
+          #home_bottom .inner .left .ibox ul li {
+            line-height: 1.2em;
+            margin-bottom: 16px; }
+            #home_bottom .inner .left .ibox ul li.line {
+              background-image: url(../img/line.svg);
+              background-repeat: no-repeat;
+              background-position: left center;
+              padding-left: 25px;
+              background-size: auto 100%;
+              list-style-type: none; }
+            #home_bottom .inner .left .ibox ul li.phone {
+              background-image: url(../img/phone.svg);
+              background-repeat: no-repeat;
+              background-position: left center;
+              padding-left: 25px;
+              background-size: auto 100%;
+              list-style-type: none; }
+            #home_bottom .inner .left .ibox ul li.location {
+              background-image: url(../img/location.svg);
+              background-repeat: no-repeat;
+              background-position: left center;
+              padding-left: 25px;
+              background-size: auto 100%;
+              list-style-type: none; }
+            #home_bottom .inner .left .ibox ul li a {
+              font-size: 16px;
+              color: #646464; }
+    #home_bottom .inner .right {
+      width: 50%; }
+      #home_bottom .inner .right img {
+        max-width: 310px;
+        display: block;
+        margin-bottom: 28px; }
+      #home_bottom .inner .right .content2 {
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-bottom: 43px;
+        max-width: 420px; }
 
 /*
 @import "vc/privacy";

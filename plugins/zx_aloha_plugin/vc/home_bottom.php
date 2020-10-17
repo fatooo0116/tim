@@ -115,8 +115,8 @@ function home_bottom_fun( $atts, $content = null ) {
         <section  id="home_bottom" class="contact_section  ">            
             <div class="inner  box_width">
                 <div class="left">
-                    <h3><?php  echo $title; ?></h3>
                     <div class="ibox">
+                        <h3><?php  echo $title; ?></h3>
                         <?php 
                             echo $content1;
                         ?>
@@ -129,7 +129,7 @@ function home_bottom_fun( $atts, $content = null ) {
                     <div class="content2">
                         <?php echo $content2; ?>
                     </div>
-                    <a href="<?php echo $$btn_link; ?>"  class="<?php echo $btn_class; ?>">立即預約諮詢</a>
+                    <a href="<?php echo $$btn_link; ?>"  class="btn   <?php echo $btn_class; ?>">立即預約諮詢</a>
                 </div>
             </div>
            

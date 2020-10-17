@@ -6,11 +6,16 @@
 @import "tpl/footer";
 @import "tpl/widget";
 
+/*
 @import "page/404";
 @import "page/blog";
 @import "page/contact";
 @import "page/page";
 @import "page/archive";
+*/
+
+@import "page/home_cal";
+@import "page/home_bottom";
 
 /*
 @import "vc/privacy";
