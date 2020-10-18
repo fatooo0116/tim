@@ -111,28 +111,21 @@ function home_contactus_fun( $atts, $content = null ) {
     $rimg = wp_get_attachment_image_src( $rimg, 'full');
 
     ob_start();
+
+    global $post;
+
     ?>
         <section  id="home_contactus" class="contact_section  ">            
-            <div class="inner  box_width">
-                <div class="left">
-                    <h3><?php  echo $title; ?></h3>
-                    <div class="ibox">
-                        <?php 
-                            echo $content1;
-                        ?>
-                    </div>
-                </div>
-                <div class="right">
-                    <?php if($rimg[0]){ ?>
-                        <img src="<?php echo $rimg[0]; ?>" />
-                    <?php } ?>   
-                    <div class="content2">
-                        <?php echo $content2; ?>
-                    </div>
-                    <a href="<?php echo $$btn_link; ?>"  class="<?php echo $btn_class; ?>">立即預約諮詢</a>
-                </div>
-            </div>
-           
+            <div class="inner  ">            
+                <?php  
+    
+                    echo  do_shortcode('[contact-form-7 id="39" title="聯絡表單 1"]');
+                    if ( comments_open() || get_comments_number() ) :
+                       // comments_template();
+                    endif;
+                    
+                    ?>
+            </div>    
         </section>
     <?php
     $output = ob_get_contents();

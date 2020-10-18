@@ -114,22 +114,41 @@ function home_testi_fun( $atts, $content = null ) {
     ?>
         <section  id="home_testi" class="contact_section  ">            
             <div class="inner  box_width">
-                <div class="left">
-                    <h3><?php  echo $title; ?></h3>
-                    <div class="ibox">
-                        <?php 
-                            echo $content1;
-                        ?>
-                    </div>
-                </div>
-                <div class="right">
-                    <?php if($rimg[0]){ ?>
-                        <img src="<?php echo $rimg[0]; ?>" />
-                    <?php } ?>   
-                    <div class="content2">
-                        <?php echo $content2; ?>
-                    </div>
-                    <a href="<?php echo $$btn_link; ?>"  class="<?php echo $btn_class; ?>">立即預約諮詢</a>
+                <h3>近期流言</h3>
+                <div class="inner">
+                    <article>
+                        <header>
+                            <div class="name">Andy</div>
+                            <div class="date">2012-10-1</div>
+                        </header>
+                        <div class="star">
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                        </div>    
+                        <div class="content">
+                            謝謝全台貸款中心專業團隊的協助，很快就拿到預期的款項讓我可以整合我的負債，如果有需求一定會再來找你們，真的非常推薦！
+                        </div>                        
+                    </article>
+
+                    <article>
+                        <header>
+                            <div class="name">Andy</div>
+                            <div class="date">2012-10-1</div>
+                        </header>
+                        <div class="star">
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                            <span class="st"></span>
+                        </div>      
+                        <div class="content">
+                            謝謝全台貸款中心專業團隊的協助，很快就拿到預期的款項讓我可以整合我的負債，如果有需求一定會再來找你們，真的非常推薦！
+                        </div>                        
+                    </article>                    
                 </div>
             </div>
            

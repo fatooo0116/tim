@@ -59,3 +59,18 @@ include 'vc/leader_bottom.php';
   include 'vc/home_testi.php';
 
   include 'post_type/project.php';
+
+
+
+  add_shortcode( 'wpse_comment_form', function( $atts = array(), $content = '' )
+{
+    if( is_singular() && post_type_supports( get_post_type(), 'comments' ) )
+    {
+        ob_start();
+       //  comment_form();
+        print(  '<style>.no-comments { display: none; }</style>' );
+        add_filter( 'comments_open', '__return_false' );
+        return ob_get_clean();
+    }
+    return '';
+}, 10, 2 );

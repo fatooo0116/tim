@@ -1,0 +1,58 @@
+#home_testi{
+    
+    h3{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #274678;
+    }
+   
+    .inner{
+        height:506px;
+        overflow-y: hidden;
+        padding-left:15px;
+        padding-right:15px;
+        
+       article{
+        margin-bottom: 26px;;
+        max-width: 780px;
+        margin-left:auto;
+        margin-right:auto;
+        padding:20px;        
+        border-radius: 8px;
+        background-color: #e8ecf3;           
+           header{
+               display:flex;
+               justify-content: space-between;
+               margin-bottom: 15px;
+               .name{
+                font-size: 16px;
+                font-weight: 500;
+                color: #274678;
+               }
+               .date{
+                font-size: 16px;
+                font-weight: 500;
+                color: #646464;
+               }
+           }
+           .star{
+               display: flex;
+               margin-bottom: 15px;
+               .st{
+                   width:14px;
+                   background-image:url(../img/star.svg);
+                   background-size: cover;;
+                   height:14px;
+                   margin-right:13px;
+               }
+           }
+           .content{
+               font-size: 14px;;
+               line-height: 1.71;
+               letter-spacing: normal;
+               color: #646464;               
+           }
+       }
+    }
+}

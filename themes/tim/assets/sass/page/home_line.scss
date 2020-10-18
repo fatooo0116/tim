@@ -1,0 +1,49 @@
+#home_line{
+    // background:#274678;
+    background-size:cover;    
+    color:#fff; 
+    padding: 50px 0 100px;
+
+    h3{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .inner{
+        margin:0 auto;
+        max-width: 1230px;;
+        padding:0 15px;
+        box-sizing: border-box;
+
+        .slick-prev,
+        .slick-next{
+            position: absolute;
+            z-index: 9;;
+            top:50%;
+            text-indent:-9999px;
+            background-image:url(../img/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color:transparent;
+            border:0px;
+            &.slick-disabled{
+                opacity: 0.4;
+            }
+        }
+        .slick-prev{
+            left:-30px;
+            transform: rotate(-180deg);
+        }
+        .slick-next{
+            right:-30px;
+        }
+
+        .slick-slide{
+            padding:0 10px;
+            img{
+                border-radius: 5px;
+                overflow: hidden;;
+            }
+        }
+    }
+}

@@ -48,12 +48,10 @@ add_action( 'vc_before_init', 'home_cal' );
  * */
 function home_cal_fun( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        // 'button_text' => '',
- 
-        
+        // 'button_text' => '',        
         'limg'=>'',
- 
-    ), $atts ) );
+    ), $atts ));
+    
 
   //  $content1 = rawurldecode( base64_decode($atts['content1'])); 
   //  $btn_link = vc_build_link( $btn_link);
@@ -70,7 +68,25 @@ function home_cal_fun( $atts, $content = null ) {
                 </div>
                 <div class="right">              
                     <div class="my_form">
-                       Form
+                       <h3>貸款試算</h3>
+                        <div class="form">
+                            <div class="item">
+                                <label for="">貸款金額</label>
+                                <input type="text"  /><span class="tx">元</span>
+                            </div>
+
+                            <div class="item">
+                                <label for="">年利率</label>
+                                <input type="text"  /><span class="tx">%</span>
+                            </div>         
+                            
+                            <div class="item">
+                                <label for="">貸款期數</label>
+                                <input type="text"  /><span class="tx">月</span>
+                            </div>                    
+
+                            <button class="btn_wht">免費試算</button>                             
+                        </div>
                     </div>                    
                 </div>
             </div>

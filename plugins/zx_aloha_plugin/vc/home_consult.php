@@ -30,7 +30,7 @@ function home_consult(){
                 ),      
 
                 array(
-                    "type" => "textarea_raw_html",
+                    "type" => "textarea",
                     "class" => "",
                     "heading" => __( "Content", "my-text-domain" ),
                     "param_name" => "content1",
@@ -39,6 +39,7 @@ function home_consult(){
                     "admin_label" => true,
                 ),  
   
+
                 array(
                     "type" => "attach_image",
                     "holder" => "div",
@@ -48,15 +49,7 @@ function home_consult(){
                     "param_name" => "rimg",                   
                   ),      
 
-                  array(
-                    "type" => "textarea",
-                    "class" => "",
-                    "heading" => __( "Content", "my-text-domain" ),
-                    "param_name" => "content2",
-                    "value" => __( "", "my-text-domain" ),
-                    "group"=>"right",
-                    "admin_label" => true,
-                ),  
+                
 
                   array(
                     "type" => "vc_link",
@@ -106,29 +99,33 @@ function home_consult_fun( $atts, $content = null ) {
         'btn_class'=>''
     ), $atts ) );
 
-    $content1 = rawurldecode( base64_decode($atts['content1'])); 
+    // $content1 = rawurldecode( base64_decode($atts['content1'])); 
     $btn_link = vc_build_link( $btn_link);
     $rimg = wp_get_attachment_image_src( $rimg, 'full');
 
     ob_start();
     ?>
 
-
         <section  id="home_consult" class="">            
             <div class="inner  ">
-                <div class="left"  style="background-image:url(<?php echo $rimg[0]; ?>)">                                        
+                <div class="left"  >                                        
+                    <div class="ibox">
+                        <h3><?php echo $title; ?></h3>
+                        <div class="content1"><?php echo $content1; ?></div>
+                        <a href="<?php echo $$btn_link; ?>"  class="btn   <?php echo $btn_class; ?>">立即預約諮詢</a>
+                        <h4>或加入官方 Line 帳號</h4>
+                        <a href="#" class="mb">moneybank</a>
+                    </div>
+                </div>
+                <div class="right"   style="background-image:url(<?php echo $rimg[0]; ?>)">          
                         <?php  if($rimg[0]){ ?>
                             <img src="<?php  echo $rimg[0]; ?>" />
-                        <?php } ?>                
-                </div>
-                <div class="right">              
-                    <div class="my_form">
-                       Form
-                    </div>                    
+                        <?php } ?>                      
                 </div>
             </div>
            
         </section>        
+
     <?php
     $output = ob_get_contents();
     ob_end_clean();
